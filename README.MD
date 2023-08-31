@@ -12,9 +12,9 @@ Al iterar estas ecuaciones muchas veces, se obtiene un conjunto de puntos que, c
 ##Ejemplo de implementación
 
 
-![Descripción de la Imagen](./Outputs/a,%20b,%20c,%20d%20=%20-1.5,%20-2,%20-2,%203.pngejemplo.png)
+![Atractor con Constantes a,b,c,d = -1,5,-2,3](./Outputs/a,%20b,%20c,%20d%20=%20-1.5,%20-2,%20-2,%203.pngejemplo.png)
 
-![Descripción de la Imagen](./Outputs/a,%20b,%20c,%20d%20=%201,%20-4,%20-1.8,%203.png)
+![Atractor con Constantes a,b,c,d = 1,-4,-1.8,3](./Outputs/a,%20b,%20c,%20d%20=%201,%20-4,%20-1.8,%203.png)
 
 
 # Atractor de Clifford para Cifrado
@@ -38,5 +38,13 @@ Para el cifrado, usamos estos atractores para generar una secuencia pseudoaleato
 1. Elija valores para los parámetros \(a\), \(b\), \(c\), y \(d\). Estos actuarán como su clave.
 2. Use la función `encrypt` para cifrar su mensaje.
 3. Use la función `decrypt` para descifrar un mensaje cifrado, usando la misma clave.
+
+### Ejemplo de uso
+
+usando valores de a,b,c,d = key = (-1.3, -1.3, -1.8, -1.9) podemos encriptar un input utilizando la fractalidad del atractor de Clifford
+
+Input = 'Hello, World!'
+Output = 'p\x00\x1e\x94éCÒ«v¹m±\x12'
+
 
 
