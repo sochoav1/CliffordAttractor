@@ -1,10 +1,10 @@
-# Atractor de Clifford
+# Clifford Attractor
 
-El atractor de Clifford es un sistema dinámico que produce patrones fractales. Basado en un conjunto de ecuaciones matemáticas, es capaz de generar visualizaciones complejas y hermosas a partir de parámetros simples.
+The Clifford attractor is a dynamical system that produces fractal patterns. Based on a set of mathematical equations, it is capable of generating complex and beautiful visualizations from simple parameters.
 
-## Visualización Gráfica
+## Graphical Visualization
 
-El atractor de Clifford transforma cada punto \( (x, y) \) en un nuevo punto \( (x', y') \) utilizando las siguientes ecuaciones:
+The Clifford attractor transforms each point \( (x, y) \) into a new point \( (x', y') \) using the following equations:
 
 \[
 x' = \sin(a \cdot y) + c \cdot \cos(a \cdot x)
@@ -13,31 +13,31 @@ x' = \sin(a \cdot y) + c \cdot \cos(a \cdot x)
 y' = \sin(b \cdot x) + d \cdot \cos(b \cdot y)
 \]
 
-Los parámetros \( a \), \( b \), \( c \), y \( d \) pueden ser ajustados por el usuario, permitiendo la creación de distintos patrones pseudoaleatorios. Al iterar estas ecuaciones repetidamente, se obtiene un conjunto de puntos que, al ser graficados, revelan patrones fascinantes.
+The parameters \( a \), \( b \), \( c \), and \( d \) can be adjusted by the user, allowing for the creation of various pseudo-random patterns. By iterating these equations repeatedly, a set of points is obtained. When plotted, these points reveal fascinating patterns that captivate the eye. These patterns can vary from scattered points to intricate spirals, depending on the parameter values.
 
-### Ejemplos de implementación
+### Implementation Examples
 
-![Atractor con constantes \( a, b, c, d \) = (-1.5, -2, -2, 3)](./Outputs/a,%20b,%20c,%20d%20=%20-1.5,%20-2,%20-2,%203.png)
+![Attractor with constants \( a, b, c, d \) = (-1.5, -2, -2, 3)](./Outputs/a,%20b,%20c,%20d%20=%20-1.5,%20-2,%20-2,%203.png)
 
-![Atractor con constantes \( a, b, c, d \) = (1, -4, -1.8, 3)](./Outputs/a,%20b,%20c,%20d%20=%201,%20-4,%20-1.8,%203.png)
+![Attractor with constants \( a, b, c, d \) = (1, -4, -1.8, 3)](./Outputs/a,%20b,%20c,%20d%20=%201,%20-4,%20-1.8,%203.png)
 
-## Atractor de Clifford para Cifrado
+## Clifford Attractor for Encryption
 
-Exploramos el uso del atractor de Clifford para crear un método de cifrado simple y único.
+We explore the use of the Clifford attractor to create a simple and unique encryption method.
 
-### Descripción
+### Description
 
-Usando el atractor de Clifford, generamos una secuencia pseudoaleatoria que posteriormente se utiliza para cifrar mensajes a través de operaciones XOR.
+Using the Clifford attractor, we generate a pseudo-random sequence that is subsequently used to encrypt messages through XOR operations. This encryption method leverages the unpredictability and intricacy of the attractor, making it difficult to decipher without the correct key.
 
-### Uso
+### Usage
 
-1. Elije valores para los parámetros \( a \), \( b \), \( c \), y \( d \). Estos actuarán como tu clave.
-2. Usa la función `encrypt` para cifrar tu mensaje.
-3. Usa la función `decrypt` para descifrar un mensaje cifrado, empleando la misma clave.
+1. Choose values for the parameters \( a \), \( b \), \( c \), and \( d \). These will act as your key.
+2. Use the `encrypt` function to encrypt your message.
+3. Use the `decrypt` function to decipher an encrypted message, employing the same key.
 
-#### Ejemplo de uso
+#### Usage Example
 
-Utilizando valores \( a, b, c, d \) = (-1.3, -1.3, -1.8, -1.9), podemos cifrar un mensaje utilizando la fractalidad del atractor de Clifford:
+Using values \( a, b, c, d \) = (-1.3, -1.3, -1.8, -1.9), we can encrypt a message leveraging the fractality of the Clifford attractor:
 
 **Input**: 'Hello, World!'
 **Output**: 'p\x00\x1e\x94éCÒ«v¹m±\x12'
